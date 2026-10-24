@@ -1,19 +1,38 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# 🌍 My Travel Journal
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A responsive, component-driven travel journal web application built with **React**. This project displays curated travel destinations using dynamic data rendering and reusable UI components.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+---
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## 📌 Features
 
-Happy Coding!
+- **Component-Driven Architecture:** Modular structure utilizing reusable React components (`Header`, `Entry`).
+- **Dynamic Data Rendering:** Uses JavaScript array methods (`.map()`) to render destination cards dynamically from a centralized dataset.
+- **Props & Spread Syntax:** Demonstrates passing data into components using props and object spread syntax (`{...entry}`).
+- **Interactive Links:** Direct integration to view destination locations on Google Maps.
+- **Clean Styling:** Styled with modular, mobile-friendly CSS.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (v19)
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
+
+---
+
+## 📂 Project Structure
+
+```text
+├── components/
+│   ├── Header.jsx       # Top navigation header with site branding
+│   └── Entry.jsx        # Reusable card component for each travel entry
+├── images/
+│   ├── globe.png        # Header globe icon
+│   └── marker.png       # Map pin icon for destination entries
+├── App.jsx              # Main parent component handling data mapping
+├── data.js              # Array of destination objects (title, location, dates, etc.)
+├── index.css            # Global styling and layout rules
+├── index.html           # Root HTML template
+└── index.jsx            # Application entry point
